@@ -4,7 +4,7 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
 
-    <changeSet id="create-table-person" author="uPagge">
+    <changeSet id="create-table-person" author="knsasov">
         <createTable tableName="person">
             <column name="id" type="int" autoIncrement="true">
                 <constraints nullable="false" primaryKey="true"/>
@@ -13,13 +13,13 @@
         </createTable>
     </changeSet>
 
-    <changeSet id="add-new-column-address" author="uPagge">
+    <changeSet id="add-new-column-address" author="knsasov">
         <addColumn tableName="person">
             <column name="address" type="varchar(300)"/>
         </addColumn>
     </changeSet>
 
-    <changeSet id="create-table-book" author="uPagge">
+    <changeSet id="create-table-book" author="knsasov">
         <createTable tableName="book">
             <column name="id" type="int" autoIncrement="true">
                 <constraints nullable="false" primaryKey="true"/>
